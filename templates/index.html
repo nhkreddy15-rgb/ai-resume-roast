@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Roast 🔥</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>AI Resume Roast 🔥</h1>
+
+        <p class="subtitle">
+            Paste your resume. Let the robot judge it.
+        </p>
+
+        <textarea
+            id="resume"
+            placeholder="Paste your resume here..."
+        ></textarea>
+
+        <button id="roastButton">
+            Roast My Resume 🔥
+        </button>
+
+        <div id="result"></div>
+
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
